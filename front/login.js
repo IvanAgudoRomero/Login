@@ -6,7 +6,7 @@ var ierror = document.getElementById("errormsg")
 function login(){
     iuser = document.getElementById("usr").value
     ipassword = document.getElementById("pass").value
-    fetch("http://localhost:8079/login", {
+    fetch("http://localhost:8080/login", {
         headers:{
             "Accept": "application/json",
             "Content-Type": "application/json"            
@@ -26,7 +26,7 @@ function login(){
 function register(){
     iuser = document.getElementById("usr").value
     ipassword = document.getElementById("pass").value  
-    fetch("http://localhost:8079/register",{
+    fetch("http://localhost:8080/register",{
         headers:{
             "Accept": "application/json",
             "Content-Type": "application/json"
@@ -47,7 +47,7 @@ function notify(msg){
 }
 
 function todos(){
-    fetch("http://localhost:8079/todos",{
+    fetch("http://localhost:8080/todos",{
         headers:{
             "Accept": "application/json",
             "Content-Type": "application/json"
